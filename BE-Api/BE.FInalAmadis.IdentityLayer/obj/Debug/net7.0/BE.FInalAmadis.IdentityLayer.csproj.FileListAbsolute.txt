@@ -12,3 +12,4 @@ C:\Final Amadis\BE-Api\BE.FInalAmadis.IdentityLayer\obj\Debug\net7.0\refint\BE.F
 C:\Final Amadis\BE-Api\BE.FInalAmadis.IdentityLayer\obj\Debug\net7.0\BE.FInalAmadis.IdentityLayer.pdb
 C:\Final Amadis\BE-Api\BE.FInalAmadis.IdentityLayer\obj\Debug\net7.0\BE.FInalAmadis.IdentityLayer.genruntimeconfig.cache
 C:\Final Amadis\BE-Api\BE.FInalAmadis.IdentityLayer\obj\Debug\net7.0\ref\BE.FInalAmadis.IdentityLayer.dll
+C:\Final Amadis\BE-Api\BE.FInalAmadis.IdentityLayer\obj\Debug\net7.0\BE.FInalAmadis.IdentityLayer.sourcelink.json
