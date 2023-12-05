@@ -85,3 +85,4 @@ C:\Final Amadis\BE-Api\BE-Api\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Des
 C:\Final Amadis\BE-Api\BE-Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\Final Amadis\BE-Api\BE-Api\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Final Amadis\BE-Api\BE-Api\bin\Debug\net7.0\System.CodeDom.dll
+C:\Final Amadis\BE-Api\BE-Api\obj\Debug\net7.0\BE.FinalAmadis.Api.sourcelink.json
