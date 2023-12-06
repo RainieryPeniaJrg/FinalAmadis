@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\BE.FinalAmadis.Api.props" />
-</Project>
