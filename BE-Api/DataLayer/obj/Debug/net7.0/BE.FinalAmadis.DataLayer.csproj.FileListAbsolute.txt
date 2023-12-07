@@ -12,3 +12,17 @@ C:\Final Amadis\BE-Api\DataLayer\obj\Debug\net7.0\refint\BE.FinalAmadis.DataLaye
 C:\Final Amadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
 C:\Final Amadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.genruntimeconfig.cache
 C:\Final Amadis\BE-Api\DataLayer\obj\Debug\net7.0\ref\BE.FinalAmadis.DataLayer.dll
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.deps.json
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.runtimeconfig.json
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.dll
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.AssemblyInfoInputs.cache
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.AssemblyInfo.cs
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.dll
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\refint\BE.FinalAmadis.DataLayer.dll
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.genruntimeconfig.cache
+C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\ref\BE.FinalAmadis.DataLayer.dll

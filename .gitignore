@@ -3,6 +3,28 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Carpeta bin y obj de cada proyecto
+**/bin/
+**/obj/
+
+# Archivos temporales
+[Tt]emp/
+[Tt]est[Rr]esults/
+
+# Archivos generados por la IDE
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Node artifact files
 node_modules/
 dist/
@@ -48,3 +70,7 @@ Thumbs.db
 *.mov
 *.wmv
 
+/BE-Api/DataLayer/Context/ProyectoContextFactory.cs
+*.v2
+*.vsidx
+*.vsidx

@@ -16,5 +16,14 @@ namespace BE.FinalAmadis.DataLayer.Context
         public DbSet<Vehiculos> Vehiculos { get; set; }
         public DbSet<Conductor> Conductores { get; set; }
         public ProyectoContext(DbContextOptions<ProyectoContext> options) : base(options) { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("Server=.;Database=AmadisFinal;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
+            }
+        }
     }
+
 }
