@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {}
+    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
+    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
-        "projectName": "BE.FinalAmadis.DataLayer",
-        "projectPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
+        "projectName": "BE.FInalAmadis.IdentityLayer",
+        "projectPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
         "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,17 +45,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.14, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.14, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.14, )"
             },
