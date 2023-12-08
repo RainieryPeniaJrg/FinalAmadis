@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BE.FinalAmadis.DataLayer.Context;
 using BE.FinalAmadis.DataLayer.Entities;
+using BE_Api.DTOs;
 
 namespace BE_Api.Controllers
 {
@@ -84,16 +85,46 @@ namespace BE_Api.Controllers
         // POST: api/Multas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Multas>> PostMultas(Multas multas)
+        public async Task<ActionResult<Multas>> PostMultas(MultaDTO multaDto)
         {
-          if (_context.Multas == null)
-          {
-              return Problem("Entity set 'ProyectoContext.Multas'  is null.");
-          }
-            _context.Multas.Add(multas);
-            await _context.SaveChangesAsync();
+            try
+            {
+                if (_context.Multas == null)
+                {
+                    return Problem("Entity set 'ProyectoContext.Multas'  is null.");
+                }
 
-            return CreatedAtAction("GetMultas", new { id = multas.Id }, multas);
+                ValidarMulta(multaDto);
+
+                Multas multa = new Multas
+                {
+                    CedulaInfractor = multaDto.Cedula,
+                    Comentario = multaDto.Comentario,
+                    Fecha = multaDto.Fecha,
+                    Hora = multaDto.Hora,
+                    FotoEvidencia = multaDto.Foto,
+                    Latitud = multaDto.Latitud,
+                    Longitud = multaDto.Longitud,
+                    TipoMultaId = multaDto.MotivoMultaId,
+                    VehiculoId = multaDto.VehiculoId,
+                    PlacaVehiculo = multaDto.PlacaVehiculo
+                };
+
+                var bytes = Convert.FromBase64String(multaDto.Foto);
+                string imagePath = Path.Combine("Imagenes", $"{Guid.NewGuid().ToString("N")}");
+                System.IO.File.WriteAllBytes(imagePath, bytes);
+
+                _context.Multas.Add(multa);
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction("GetMultas", new { id = multa.Id }, multa);
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+         
         }
 
         // DELETE: api/Multas/5
@@ -119,6 +150,20 @@ namespace BE_Api.Controllers
         private bool MultasExists(int id)
         {
             return (_context.Multas?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+
+        private bool ValidarMulta(MultaDTO multaDto)
+        {
+            if (string.IsNullOrWhiteSpace(multaDto.Cedula))
+            {
+                throw new Exception("La cedula es requerida");
+            }
+
+            if (string.IsNullOrWhiteSpace(multaDto.PlacaVehiculo))
+            {
+                throw new Exception("La placa del vehiculo es requerida");
+            }
+            return true;
         }
     }
 }
