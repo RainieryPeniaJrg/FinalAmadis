@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {}
+    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
+    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
         "projectName": "BE.FinalAmadis.DataLayer",
-        "projectPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
+        "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
         "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

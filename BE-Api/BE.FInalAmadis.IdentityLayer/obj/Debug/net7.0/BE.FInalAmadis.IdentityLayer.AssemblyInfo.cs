@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BE.FInalAmadis.IdentityLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8c6a7b367154937cb3e95471035ef56f2b2619c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BE.FInalAmadis.IdentityLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BE.FInalAmadis.IdentityLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

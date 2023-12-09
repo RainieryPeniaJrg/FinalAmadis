@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rPzPspUlz9vkUy0RlVxe1dxYmB5ZmPZXaXrI2+5TeVdSA3v+u8Xf4adcZMVD1qvB3GN5l38yGkP7XLSGR6q52Q==",
+  "dgSpecHash": "u805Y7meDS5fNWuUgrENsJfSUSUWNYMKvsCDHFDn43B4sYyCx+Fq4NeDC042q/BWKS6F434AKZ4Uhjl0j6ts6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
+  "projectFilePath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raini\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\raini\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

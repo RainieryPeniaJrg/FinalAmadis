@@ -3099,9 +3099,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
       "projectName": "BE.FInalAmadis.IdentityLayer",
-      "projectPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
+      "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
       "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\raini\\Source\\Repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\obj\\",
       "projectStyle": "PackageReference",

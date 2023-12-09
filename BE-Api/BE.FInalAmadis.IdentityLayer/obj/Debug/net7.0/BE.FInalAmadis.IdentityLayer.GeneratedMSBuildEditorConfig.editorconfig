@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BE.FInalAmadis.IdentityLayer
-build_property.ProjectDir = C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\BE.FInalAmadis.IdentityLayer\
+build_property.ProjectDir = C:\Users\raini\source\repos\FinalAmadis\BE-Api\BE.FInalAmadis.IdentityLayer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
