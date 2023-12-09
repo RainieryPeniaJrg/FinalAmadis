@@ -26,3 +26,18 @@ C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Int
 C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
 C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.genruntimeconfig.cache
 C:\Users\carlo\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\C-6\Introduccion al Desarrollo de Aplicaciones Moviles\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\ref\BE.FinalAmadis.DataLayer.dll
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.deps.json
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.runtimeconfig.json
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.dll
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\bin\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.csproj.AssemblyReference.cache
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.AssemblyInfoInputs.cache
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.AssemblyInfo.cs
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.sourcelink.json
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.dll
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\refint\BE.FinalAmadis.DataLayer.dll
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.pdb
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\BE.FinalAmadis.DataLayer.genruntimeconfig.cache
+C:\Users\raini\Source\Repos\FinalAmadis\BE-Api\DataLayer\obj\Debug\net7.0\ref\BE.FinalAmadis.DataLayer.dll
