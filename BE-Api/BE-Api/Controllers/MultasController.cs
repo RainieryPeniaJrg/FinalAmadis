@@ -24,13 +24,56 @@ namespace BE_Api.Controllers
 
         // GET: api/Multas
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Multas>>> GetMultas()
+        public async Task<ActionResult<IEnumerable<MultaDTO>>> GetMultas()
         {
-          if (_context.Multas == null)
-          {
-              return NotFound();
-          }
-            return await _context.Multas.ToListAsync();
+
+            try
+            {
+                if (_context.Multas == null)
+                {
+                    return NotFound();
+                }
+
+                var multas = await _context.Multas.ToListAsync();
+                List<MultaDTO> result = new List<MultaDTO>();
+
+                foreach (var multa in multas)
+                {
+                    var multaDto = new MultaDTO()
+                    {
+                        Id = multa.Id,
+                        Cedula = multa.CedulaInfractor,
+                        Comentario = multa.Comentario,
+                        Fecha = multa.Fecha,
+                        Hora = multa.Hora,
+                        Latitud = multa.Latitud,
+                        Longitud = multa.Longitud,
+                        MotivoMultaId = multa.TipoMultaId,
+                        VehiculoId = multa.VehiculoId,
+                    };
+
+                    if (!string.IsNullOrEmpty(multa.FotoEvidencia))
+                    {
+                        byte[] bytesImagen = System.IO.File.ReadAllBytes(multa.FotoEvidencia);
+                        if (bytesImagen.Length > 0)
+                        {
+                            string base64String = Convert.ToBase64String(bytesImagen);
+                            multaDto.Foto = base64String;
+                        }
+
+                    }
+
+                    result.Add(multaDto);
+                }
+
+                return result;
+            }
+            catch (Exception e)
+            {
+
+                throw e;
+            }
+        
         }
 
         // GET: api/Multas/5
@@ -85,7 +128,7 @@ namespace BE_Api.Controllers
         // POST: api/Multas
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Multas>> PostMultas(MultaDTO multaDto)
+        public async Task<ActionResult<Multas>> PostMultas([FromBody] MultaDTO multaDto)
         {
             try
             {
@@ -98,21 +141,22 @@ namespace BE_Api.Controllers
 
                 Multas multa = new Multas
                 {
-                    CedulaInfractor = multaDto.Cedula,
-                    Comentario = multaDto.Comentario,
-                    Fecha = multaDto.Fecha,
-                    Hora = multaDto.Hora,
-                    FotoEvidencia = multaDto.Foto,
-                    Latitud = multaDto.Latitud,
-                    Longitud = multaDto.Longitud,
-                    TipoMultaId = multaDto.MotivoMultaId,
-                    VehiculoId = multaDto.VehiculoId,
-                    PlacaVehiculo = multaDto.PlacaVehiculo
+                    CedulaInfractor = multaDto.Cedula ?? "",
+                    Comentario = multaDto.Comentario ?? "",
+                    Fecha = multaDto.Fecha ?? DateTime.Now,
+                    Hora = multaDto.Hora ?? TimeSpan.MinValue,
+                    Latitud = multaDto.Latitud ?? double.MinValue,
+                    Longitud = multaDto.Longitud ?? 0,
+                    PlacaVehiculo = multaDto.PlacaVehiculo ?? "",
+                    TipoMultaId = multaDto.MotivoMultaId ?? 0,
                 };
 
-                var bytes = Convert.FromBase64String(multaDto.Foto);
-                string imagePath = Path.Combine("Imagenes", $"{Guid.NewGuid().ToString("N")}");
-                System.IO.File.WriteAllBytes(imagePath, bytes);
+                if (!string.IsNullOrEmpty(multaDto.Foto)) { 
+                    var bytes = Convert.FromBase64String(multaDto.Foto ?? "");
+                    string imagePath = Path.Combine("Imagenes", $"{Guid.NewGuid().ToString("N")}");
+                    multa.FotoEvidencia = imagePath;
+                    System.IO.File.WriteAllBytes(imagePath, bytes);
+                }
 
                 _context.Multas.Add(multa);
                 await _context.SaveChangesAsync();

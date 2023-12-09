@@ -74,3 +74,7 @@ Thumbs.db
 *.v2
 *.vsidx
 *.vsidx
+BE-Api/.vs/BE-Api/v17/.suo
+BE-Api/.vs/BE-Api/v17/.futdcache.v2
+BE-Api/.vs/BE-Api/DesignTimeBuild/.dtbcache.v2
+*.v2
