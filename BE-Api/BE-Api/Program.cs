@@ -79,6 +79,7 @@ builder.Services
 // Inject app Dependencies (Dependency Injection)
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
