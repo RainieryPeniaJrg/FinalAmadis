@@ -1,23 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {}
+    "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {
+    "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
         "projectName": "BE.FInalAmadis.IdentityLayer",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
         "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\obj\\",
+=======
+        "projectPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj",
+        "packagesPath": "C:\\Users\\Elian Baez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\obj\\",
+>>>>>>> 0a5009bfff47cd190c18b8738bce56be734cdf15
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\raini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Elian Baez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +32,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,6 +80,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

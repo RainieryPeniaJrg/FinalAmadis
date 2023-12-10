@@ -82,12 +82,16 @@ builder.Services
 // Inject app Dependencies (Dependency Injection)
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+<<<<<<< HEAD
 builder.Services.AddScoped<ITipoMultaRepository, TipoMultaRepository>();
 builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
 builder.Services.AddScoped<IConductorRepository, ConductorRepository>();
 builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
 
 
+=======
+builder.Services.AddHttpClient();
+>>>>>>> 0a5009bfff47cd190c18b8738bce56be734cdf15
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

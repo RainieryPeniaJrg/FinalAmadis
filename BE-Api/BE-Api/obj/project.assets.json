@@ -11917,23 +11917,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raini\\.nuget\\packages\\": {},
+    "C:\\Users\\Elian Baez\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
       "projectName": "BE.FinalAmadis.Api",
-      "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
-      "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE-Api\\obj\\",
+      "projectPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE-Api\\BE.FinalAmadis.Api.csproj",
+      "packagesPath": "C:\\Users\\Elian Baez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE-Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\raini\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Elian Baez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11942,18 +11942,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {
-              "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj"
+            "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj": {
+              "projectPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\BE.FInalAmadis.IdentityLayer\\BE.FInalAmadis.IdentityLayer.csproj"
             },
-            "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
-              "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj"
+            "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
+              "projectPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj"
             }
           }
         }
