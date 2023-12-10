@@ -10,15 +10,8 @@ using BE.FinalAmadis.DataLayer.Interfaces;
 
 namespace BE.FinalAmadis.DataLayer.Repositories
 {
-    public class TipoMultaRepository : Repository<TipoMulta>,ITipoMultaRepository
-
+    public class MultasRepostory : Repository<Multas>, IMultasRepository
     {
-     
-        public TipoMultaRepository(ProyectoContext context) : base(context) { }
-        
-            
-        
-
-
+        public MultasRepostory(ProyectoContext context) : base(context) { }
     }
 }

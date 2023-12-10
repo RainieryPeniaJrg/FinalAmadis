@@ -12,12 +12,12 @@ namespace BE.FinalAmadis.DataLayer.Entities
         public string CedulaInfractor { get; set; } = string.Empty;
         public string PlacaVehiculo { get; set; } = string.Empty;
       
-        public string FotoEvidencia { get; set; } = string.Empty;
+        //public string FotoEvidencia { get; set; } = string.Empty;
         public string Comentario { get; set; } = string.Empty;
         public double Latitud { get; set; }
         public double Longitud { get; set; }
         public DateTime Fecha { get; set; }
-        public TimeSpan Hora { get; set; }
+        //public TimeSpan Hora { get; set; }
 
         public int TipoMultaId { get; set; }
         public TipoMulta TipoMulta { get; set; }

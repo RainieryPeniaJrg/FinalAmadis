@@ -3,11 +3,14 @@ using BE.FInalAmadis.IdentityLayer.Core.DbContext;
 using BE.FInalAmadis.IdentityLayer.Core.Entities;
 using BE.FInalAmadis.IdentityLayer.Core.Interfaces;
 using BE.FInalAmadis.IdentityLayer.Core.Services;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using BE.FinalAmadis.DataLayer.Interfaces;
+using BE.FinalAmadis.DataLayer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -79,6 +82,12 @@ builder.Services
 // Inject app Dependencies (Dependency Injection)
 
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ITipoMultaRepository, TipoMultaRepository>();
+builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
+builder.Services.AddScoped<IConductorRepository, ConductorRepository>();
+builder.Services.AddScoped<IVehiculoRepository, VehiculoRepository>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

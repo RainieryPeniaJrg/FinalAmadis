@@ -15,7 +15,5 @@ namespace BE.FinalAmadis.DataLayer.Entities
         public string Modelo { get; set; } = string.Empty;
         public int Anio { get; set; } = int.MaxValue;
 
-        public int IdMulta { get; set; }
-        public Multas Multa { get; set; }
     }
 }

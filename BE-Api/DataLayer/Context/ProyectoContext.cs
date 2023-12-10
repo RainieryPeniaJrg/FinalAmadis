@@ -24,6 +24,23 @@ namespace BE.FinalAmadis.DataLayer.Context
                 optionsBuilder.UseSqlServer("Server=.;Database=AmadisFinal;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
             }
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Multas>()
+                .HasOne(m => m.TipoMulta)
+                .WithMany()
+                .HasForeignKey(m => m.TipoMultaId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Multas>()
+                .HasOne(m => m.Vehiculo)
+                .WithMany()
+                .HasForeignKey(m => m.VehiculoId)
+                .OnDelete(DeleteBehavior.NoAction);
+        }
     }
 
 }

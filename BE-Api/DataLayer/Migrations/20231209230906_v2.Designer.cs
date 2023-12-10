@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BE.FinalAmadis.DataLayer.Migrations
 {
     [DbContext(typeof(ProyectoContext))]
-    [Migration("20231203214308_init")]
-    partial class init
+    [Migration("20231209230906_v2")]
+    partial class v2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,13 +81,6 @@ namespace BE.FinalAmadis.DataLayer.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("FotoEvidencia")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<TimeSpan>("Hora")
-                        .HasColumnType("time");
-
                     b.Property<double>("Latitud")
                         .HasColumnType("float");
 
@@ -108,8 +101,7 @@ namespace BE.FinalAmadis.DataLayer.Migrations
 
                     b.HasIndex("TipoMultaId");
 
-                    b.HasIndex("VehiculoId")
-                        .IsUnique();
+                    b.HasIndex("VehiculoId");
 
                     b.ToTable("Multas");
                 });
@@ -146,9 +138,6 @@ namespace BE.FinalAmadis.DataLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdMulta")
-                        .HasColumnType("int");
-
                     b.Property<string>("Marca")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -169,31 +158,20 @@ namespace BE.FinalAmadis.DataLayer.Migrations
             modelBuilder.Entity("BE.FinalAmadis.DataLayer.Entities.Multas", b =>
                 {
                     b.HasOne("BE.FinalAmadis.DataLayer.Entities.TipoMulta", "TipoMulta")
-                        .WithMany("Multas")
+                        .WithMany()
                         .HasForeignKey("TipoMultaId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BE.FinalAmadis.DataLayer.Entities.Vehiculos", "Vehiculo")
-                        .WithOne("Multa")
-                        .HasForeignKey("BE.FinalAmadis.DataLayer.Entities.Multas", "VehiculoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany()
+                        .HasForeignKey("VehiculoId")
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("TipoMulta");
 
                     b.Navigation("Vehiculo");
-                });
-
-            modelBuilder.Entity("BE.FinalAmadis.DataLayer.Entities.TipoMulta", b =>
-                {
-                    b.Navigation("Multas");
-                });
-
-            modelBuilder.Entity("BE.FinalAmadis.DataLayer.Entities.Vehiculos", b =>
-                {
-                    b.Navigation("Multa")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

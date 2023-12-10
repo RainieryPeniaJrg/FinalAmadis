@@ -10,14 +10,22 @@ namespace BE_Api.Controllers
     {
 
         private readonly  ITipoMultaRepository _repository;
+        
+        public TipoMultaController (ITipoMultaRepository repository)
+        {
+            _repository = repository;
+        }
 
         [HttpGet]
         [Route("get-tipo-multa")]
-        public async Task<IActionResult> GetTipoMulta()
+
+        public async Task <IActionResult> GetTipoLista()
         {
             var result = await _repository.GetEntitiesAsync();
-
             return Ok(result);
+
         }
+   
+       
     }
 }

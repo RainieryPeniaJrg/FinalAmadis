@@ -52,8 +52,7 @@ namespace BE.FinalAmadis.DataLayer.Migrations
                     Color = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Marca = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Modelo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Anio = table.Column<int>(type: "int", nullable: false),
-                    IdMulta = table.Column<int>(type: "int", nullable: false)
+                    Anio = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -85,13 +84,12 @@ namespace BE.FinalAmadis.DataLayer.Migrations
                         column: x => x.TipoMultaId,
                         principalTable: "TiposMultas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Multas_Vehiculos_VehiculoId",
                         column: x => x.VehiculoId,
                         principalTable: "Vehiculos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -102,8 +100,7 @@ namespace BE.FinalAmadis.DataLayer.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Multas_VehiculoId",
                 table: "Multas",
-                column: "VehiculoId",
-                unique: true);
+                column: "VehiculoId");
         }
 
         /// <inheritdoc />

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BE.FinalAmadis.DataLayer.Context;
 using BE.FinalAmadis.DataLayer.Entities;
+using BE.FinalAmadis.DataLayer.Interfaces;
 using BE_Api.DTOs;
 
 namespace BE_Api.Controllers
@@ -16,6 +17,7 @@ namespace BE_Api.Controllers
     public class MultasController : ControllerBase
     {
         private readonly ProyectoContext _context;
+        
 
         public MultasController(ProyectoContext context)
         {
@@ -45,23 +47,23 @@ namespace BE_Api.Controllers
                         Cedula = multa.CedulaInfractor,
                         Comentario = multa.Comentario,
                         Fecha = multa.Fecha,
-                        Hora = multa.Hora,
+                       
                         Latitud = multa.Latitud,
                         Longitud = multa.Longitud,
                         MotivoMultaId = multa.TipoMultaId,
                         VehiculoId = multa.VehiculoId,
                     };
 
-                    if (!string.IsNullOrEmpty(multa.FotoEvidencia))
-                    {
-                        byte[] bytesImagen = System.IO.File.ReadAllBytes(multa.FotoEvidencia);
-                        if (bytesImagen.Length > 0)
-                        {
-                            string base64String = Convert.ToBase64String(bytesImagen);
-                            multaDto.Foto = base64String;
-                        }
+                    //if (!string.IsNullOrEmpty(multa.FotoEvidencia))
+                    //{
+                    //    byte[] bytesImagen = System.IO.File.ReadAllBytes(multa.FotoEvidencia);
+                    //    if (bytesImagen.Length > 0)
+                    //    {
+                    //        string base64String = Convert.ToBase64String(bytesImagen);
+                    //        multaDto.Foto = base64String;
+                    //    }
 
-                    }
+                    //}
 
                     result.Add(multaDto);
                 }
@@ -144,19 +146,20 @@ namespace BE_Api.Controllers
                     CedulaInfractor = multaDto.Cedula ?? "",
                     Comentario = multaDto.Comentario ?? "",
                     Fecha = multaDto.Fecha ?? DateTime.Now,
-                    Hora = multaDto.Hora ?? TimeSpan.MinValue,
+                 
                     Latitud = multaDto.Latitud ?? double.MinValue,
                     Longitud = multaDto.Longitud ?? 0,
                     PlacaVehiculo = multaDto.PlacaVehiculo ?? "",
                     TipoMultaId = multaDto.MotivoMultaId ?? 0,
+                    VehiculoId = multaDto.VehiculoId ?? 0,
                 };
 
-                if (!string.IsNullOrEmpty(multaDto.Foto)) { 
-                    var bytes = Convert.FromBase64String(multaDto.Foto ?? "");
-                    string imagePath = Path.Combine("Imagenes", $"{Guid.NewGuid().ToString("N")}");
-                    multa.FotoEvidencia = imagePath;
-                    System.IO.File.WriteAllBytes(imagePath, bytes);
-                }
+                //if (!string.IsNullOrEmpty(multaDto.Foto)) { 
+                //    var bytes = Convert.FromBase64String(multaDto.Foto ?? "");
+                //    string imagePath = Path.Combine("Imagenes", $"{Guid.NewGuid().ToString("N")}");
+                //    multa.FotoEvidencia = imagePath;
+                //    System.IO.File.WriteAllBytes(imagePath, bytes);
+                //}
 
                 _context.Multas.Add(multa);
                 await _context.SaveChangesAsync();
