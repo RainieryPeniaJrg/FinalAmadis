@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {}
+    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
+    "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
         "projectName": "BE.FinalAmadis.DataLayer",
-        "projectPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Elian Baez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elian Baez\\Desktop\\Proyecto final\\FinalAmadis\\BE-Api\\DataLayer\\obj\\",
+        "projectPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\BE.FinalAmadis.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\raini\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\raini\\source\\repos\\FinalAmadis\\BE-Api\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Elian Baez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\raini\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

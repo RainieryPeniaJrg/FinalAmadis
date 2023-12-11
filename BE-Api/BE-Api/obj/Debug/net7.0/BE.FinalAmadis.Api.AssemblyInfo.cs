@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BE.FinalAmadis.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af5801a3c7ca1f1bdae0b2ae0c55f809b0472290")]
 [assembly: System.Reflection.AssemblyProductAttribute("BE.FinalAmadis.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BE.FinalAmadis.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

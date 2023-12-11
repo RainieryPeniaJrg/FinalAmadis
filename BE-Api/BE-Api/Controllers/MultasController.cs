@@ -36,7 +36,10 @@ namespace BE_Api.Controllers
                     return NotFound();
                 }
 
-                var multas = await _context.Multas.ToListAsync();
+                var multas = await _context.Multas
+                    .Include(m => m.Vehiculo)  // Incluir datos relacionados de Vehiculo
+                    .Include(m => m.TipoMulta) // Incluir datos relacionados de TipoMultas
+                    .ToListAsync();
                 List<MultaDTO> result = new List<MultaDTO>();
 
                 foreach (var multa in multas)
@@ -47,11 +50,14 @@ namespace BE_Api.Controllers
                         Cedula = multa.CedulaInfractor,
                         Comentario = multa.Comentario,
                         Fecha = multa.Fecha,
-                       
                         Latitud = multa.Latitud,
                         Longitud = multa.Longitud,
                         MotivoMultaId = multa.TipoMultaId,
                         VehiculoId = multa.VehiculoId,
+                        PlacaVehiculo = multa.Vehiculo?.Placa,
+                        TipoMulta = multa.TipoMulta?.Descripcion
+                        
+
                     };
 
                     //if (!string.IsNullOrEmpty(multa.FotoEvidencia))
@@ -146,10 +152,8 @@ namespace BE_Api.Controllers
                     CedulaInfractor = multaDto.Cedula ?? "",
                     Comentario = multaDto.Comentario ?? "",
                     Fecha = multaDto.Fecha ?? DateTime.Now,
-                 
                     Latitud = multaDto.Latitud ?? double.MinValue,
                     Longitud = multaDto.Longitud ?? 0,
-                    PlacaVehiculo = multaDto.PlacaVehiculo ?? "",
                     TipoMultaId = multaDto.MotivoMultaId ?? 0,
                     VehiculoId = multaDto.VehiculoId ?? 0,
                 };
@@ -206,10 +210,7 @@ namespace BE_Api.Controllers
                 throw new Exception("La cedula es requerida");
             }
 
-            if (string.IsNullOrWhiteSpace(multaDto.PlacaVehiculo))
-            {
-                throw new Exception("La placa del vehiculo es requerida");
-            }
+          
             return true;
         }
     }
