@@ -9,6 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.6.0
+  image_picker: ^1.0.4
+  http: ^1.1.2
+  cached_network_image: ^3.1.0
+  html: ^0.15.0
+  flutter_html: ^3.0.0-beta.2
+  flutter_widget_from_html_core: ^0.14.9
+  flutter_widget_from_html: ^0.14.9
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +25,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/PORTADA.jpg
+    - assets/aplicarm.png
+    - assets/clima.png
+    - assets/horoscopo.png
+    - assets/licencia.png
+    - assets/mapa.png
+    - assets/multa.png
+    - assets/multasreg.png
+    - assets/noticias.jpg
+    - assets/placa.png
